@@ -17,7 +17,7 @@
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.01em;
-    color: var(--color-grey);
+    color: var(--color-black);
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
@@ -88,7 +88,7 @@
 
 .checkbox-icon {
   display: inline-block;
-  width: 15px;
+  width: 16px;
   height: 15px;
   margin-right: 5px;
   border: 2px solid;
@@ -96,11 +96,11 @@
   border-radius: 4px;
   cursor: pointer;
   transition: all var(--time-function) var(--cubic);
-  &:checked + .checkbox-icon {
-    border-color: var(--color-blue);
-    background-color: var(--color-blue);
-    background-image: url(../images/icon-check.svg);
-    background-size: contain;
-    background-origin: border-box;
-  }
+}
+.modal-checkbox:checked + .checkbox-icon {
+  border-color: var(--color-blue);
+  background-color: var(--color-blue);
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
 }

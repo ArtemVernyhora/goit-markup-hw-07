@@ -71,3 +71,7 @@
   transform: translateY(100%);
   transition: var(--time-function) var(--cubic);
 }
+.portfolio-content:hover .portfolio-top-text,
+.portfolio-content:focus .portfolio-top-text {
+  transform: translateY(0);
+}
